@@ -5,12 +5,14 @@ while True:
     if step == 'стоп':
         break
     a = int(input('укажите количество шагов:'))
-    if step == 'вправо':
+    if a < 0:
+        print ('отрицательные шаги недопустимы')
+    elif step == 'вправо':
         x+=a
-    if step == 'влево':
+    elif step == 'влево':
         x-=a
-    if step == 'вниз':
+    elif step == 'вниз':
         y-=a
-    if step == 'вверх':
+    elif step == 'вверх':
         y+=a
     print('текущие координаты:', x, y)
